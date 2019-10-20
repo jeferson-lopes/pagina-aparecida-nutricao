@@ -34,6 +34,13 @@ function addPacientes(paciente){
 	var gorduraTd = document.createElement("td");
 	var imcTd = document.createElement("td");
 	
+	//Adicionando classes os trs
+	pacienteTr.setAttribute("class", "paciente")
+	nomeTd.setAttribute("class", "info-nome")
+	pesoTd.setAttribute("class", "info-peso")
+	alturaTd.setAttribute("class", "info-altura")
+	imcTd.setAttribute("class", "info-imc")
+	
 	//Inserino valores nas colunas
 	nomeTd.textContent = paciente.nome
 	pesoTd.textContent = paciente.peso
@@ -50,4 +57,5 @@ function addPacientes(paciente){
 	
 	//Inserino colunas na tablea
 	tabelaPacientes.appendChild(pacienteTr);
+	var pacientes = document.querySelectorAll(".paciente")
 }
