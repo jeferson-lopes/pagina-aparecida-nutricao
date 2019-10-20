@@ -3,8 +3,8 @@ var botaoAdicionar = document.querySelector("#buscar-pacientes")
 botaoAdicionar.addEventListener("click", function(){
 	var xhr = new XMLHttpRequest();
 	
-	xhr.open("GET", "http://api-pacientes.herokuapp.com/pacientes11")
-	
+	xhr.open("GET", "http://api-pacientes.herokuapp.com/pacientes")
+
 	xhr.addEventListener("load", function(){
 		
 		if (xhr.status == 200){
